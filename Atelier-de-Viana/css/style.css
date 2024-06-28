@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fafafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+.banner{
+    background-image: url("/Atelier-de-Viana/img/Logo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    text-transform: uppercase;
+    background-color: white;
+    border-bottom: 1px solid #020224e9;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    padding: 10px 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    list-style: none;
+}
+
+nav ul li {
+    justify-content: space-between;
+    margin-left: 10px;
+    font-size: .9rem;
+}
+
+nav ul li:hover {
+    border-bottom: 1.5px solid #020224e9;
+}
+
+a {
+    color: #020224e9;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: #020224e9;
+    cursor: pointer;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 
+.section5 {
+    height: 100vh;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 49px 0px 50px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: black;*/
+}
+
+.section h1 {
+    font-size: 300%;
+    letter-spacing: var(--espacamento-dos-titulos);
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: -25%;
+}
+
+section .section1-text1,
+.section1-text2 {
+    font-size: .75rem;
+    letter-spacing: var(--espacamento-dos-textos);
+    height: 20%;
+    width: 30%;
+    margin: 2%;
+    position: relative;
+    top: 180px;
+}
+section .section1-text1{
+    text-align: start;
+}
+
+section .section1-text2{
+    text-align: end;
+}
+
+section .section1-img {
+    width: auto;
+    height: 50%;
+    position: relative;
+    bottom: 40px;
+}
+
+@media (max-width: 0px) {}
