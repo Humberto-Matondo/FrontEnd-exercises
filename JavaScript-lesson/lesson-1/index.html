@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1</title>
+</head>
+  <body>
+     <p>Cart Quantity</p>
+     <button onclick="console.log('Quantity: ${cartQuantity}')">Show Quantity</button>
+     <button onclick="console.log('')">Add to cart</button>
+     <button onclick="console.log('Quantity: ${add2}')">+2</button>
+     <button onclick="console.log('Quantity: ${add3}')">+3</button>
+     <button onclick="console.log('Quantity: ${resert}')">Resert Cart</button>
+     
+     <script>
+        let cartQuantity =  0;
+        let add2 = (cartQuantity + 2);
+        let add3 = (cartQuantity + 3);
+        let resert =  (cartQuantity * 2);
+     </script>
+</body>
+</html>
