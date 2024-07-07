@@ -14,3 +14,8 @@ console.log(typeof NaN);
 console.log(`A soma, 2 + 2 = ${2+2}`);
 console.log('A soma, 2 + 2 = ${2+2}');
 console.log(`Qualquer coisa aqui: ${console.log('TESTE')}`);
+
+// 4 - Comparacoes
+
+console.log(9 == '9');
+console.log(9 === '9');
