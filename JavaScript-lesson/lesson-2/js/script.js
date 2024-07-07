@@ -19,3 +19,4 @@ console.log(`Qualquer coisa aqui: ${console.log('TESTE')}`);
 
 console.log(9 == '9');
 console.log(9 === '9');
+
