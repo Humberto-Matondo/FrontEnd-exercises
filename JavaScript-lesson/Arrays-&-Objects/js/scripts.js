@@ -85,3 +85,8 @@ const posts = [
 posts.forEach((post) => {
     console.log(`Post: ${post.title} da Catedoria: ${post.category}`);
 });
+
+// ARRAYS: INCLUDES
+const brands = ['Nike','Adidias','BMW'];
+console.log(brands.includes('Nike'));
+console.log(brands.includes('Mercedes'));
