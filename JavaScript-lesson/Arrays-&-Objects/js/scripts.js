@@ -67,3 +67,21 @@ console.log(subarray2);
 
 const subarray3 = frutas.slice(1); // vai pegar de 1 ate ao final 
 console.log(subarray3);
+
+// ARRAYS: forEach
+
+const nums = [7,8,9,10,11];
+
+nums.forEach((numero) => { //O numero e o proprio elemento 
+    console.log(`O numero: ${numero}`); 
+});
+
+const posts = [
+    { title: 'Primeiro Post', category: 'NADA'},
+    { title: 'Segundo Post', category: 'OLA'},
+    { title: 'Terceiro Post', category: 'OI'},
+];
+
+posts.forEach((post) => {
+    console.log(`Post: ${post.title} da Catedoria: ${post.category}`);
+});
