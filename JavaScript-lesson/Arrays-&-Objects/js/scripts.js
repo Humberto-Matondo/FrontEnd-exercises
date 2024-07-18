@@ -97,3 +97,15 @@ console.log(nums);
 
 nums.reverse();
 console.log(nums);
+
+// Metodos de STRING: trim
+
+const trimTeste = "Ola Mundo 3";
+
+console.log(trimTeste);
+console.log(trimTeste.trim());
+console.log(trimTeste.length);
+console.log(trimTeste.trim().length);
+
+
+
