@@ -20,3 +20,9 @@ console.log('Listando usuarios:');
 for(let i = 0; i < users.length; i++){
     console.log(`Usuario: ${users[i]}`);
 };
+
+users.push('Kiluanje');
+console.log(users);
+
+users.pop();
+console.log(users);
