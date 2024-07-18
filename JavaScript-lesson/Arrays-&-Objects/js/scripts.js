@@ -48,7 +48,7 @@ console.log(letters);
 
 // ARRAYS: IndexOf and lastIndex
 
-const frutas = ['Melancia','Pera','Ananas','Pera'];
+const frutas = ['Melancia','Pera','Ananas','Pera', 'Manga'];
 
 console.log(`Index : ${frutas.indexOf('Ananas')}`);
 console.log(`Elemento do index: ${frutas[frutas.indexOf('Ananas')]}`);
@@ -57,3 +57,13 @@ console.log(`Indice/Possicao do ultimo repetido: ${frutas.lastIndexOf('Pera')}`)
 
 // ARRAYS: slice
 
+const subarray = frutas.slice(1,3); //N vai mostrar o PERA, para mostrar Indice + 1(4)
+console.log(subarray);
+
+
+const subarray2 = frutas.slice(1,4); //N vai mostrar o PERA, para mostrar Indice + 1(4)
+console.log(subarray2);
+
+
+const subarray3 = frutas.slice(1); // vai pegar de 1 ate ao final 
+console.log(subarray3);
