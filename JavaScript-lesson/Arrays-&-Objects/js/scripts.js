@@ -107,5 +107,16 @@ console.log(trimTeste.trim());
 console.log(trimTeste.length);
 console.log(trimTeste.trim().length);
 
+// Metodos de STRING: Padstart 
+
+const testPadstart = '1';
+
+const newNumber = testPadstart.padStart(4,'0'); // 4 digitos no maximo preenchidos com 0s
+
+console.log(testPadstart);
+console.log(newNumber);
+
+// Metodos de STRING: split 
+
 
 
