@@ -26,3 +26,13 @@ console.log(users);
 
 users.pop();
 console.log(users);
+
+const letters = ['d','e','f','g','h'];
+const letter = letters.shift();
+
+console.log(letters);
+console.log(letter);
+
+letters.unshift('a','b','c');
+console.log(letters);
+
