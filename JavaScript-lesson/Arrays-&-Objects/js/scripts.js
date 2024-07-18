@@ -90,3 +90,10 @@ posts.forEach((post) => {
 const brands = ['Nike','Adidias','BMW'];
 console.log(brands.includes('Nike'));
 console.log(brands.includes('Mercedes'));
+
+// ARRAYS: Reverse
+
+console.log(nums);
+
+nums.reverse();
+console.log(nums);
