@@ -174,9 +174,17 @@ const userDetails = {
     job: 'Dev Full-Stack',
 };
 
-const {nome, job} = userDetails; //Estrutuda do Destructuring 
+const {nome, job} = userDetails; //Estrutuda do Destructuring, cria variaveis com os mesmos nomes que as propriendades dentro do obj 
 console.log(nome, job);
 
 const {nome: nomeCompleto} = userDetails; // Cria a variavel nomeCompleto e add o valor que se encontra no NOME dentro do OBJECT
 console.log(nomeCompleto, job);
+
+// Destructuring em Array
+
+const myList = ['Carro', 'Moto', 'Bike'];
+
+const [veiculoA, veiculoB, veiculoC] = myList; //Estrutuda do Destructuring, as variaveis sao as minhas escolhas
+console.log(veiculoA, veiculoB, veiculoC);
+
 
