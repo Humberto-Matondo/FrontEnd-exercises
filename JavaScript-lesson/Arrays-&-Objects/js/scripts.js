@@ -118,5 +118,17 @@ console.log(newNumber);
 
 // Metodos de STRING: split 
 
+const frase = 'O rato roeu a roupa do rei da roma'; 
+const arrayfrase = frase.split(' ');
 
+console.log(arrayfrase);
 
+// Metodos de STRING: join 
+
+const fraseNova = arrayfrase.join(' ');
+console.log(fraseNova);
+
+const itensAcomprar = ['Mouse','Tela','Colunas'];
+const fraseDeCompras = `Preciso comprar ${itensAcomprar.join(', ')}.`;
+
+console.log(fraseDeCompras);
