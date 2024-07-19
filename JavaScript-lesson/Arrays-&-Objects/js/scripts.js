@@ -132,3 +132,9 @@ const itensAcomprar = ['Mouse','Tela','Colunas'];
 const fraseDeCompras = `Preciso comprar ${itensAcomprar.join(', ')}.`;
 
 console.log(fraseDeCompras);
+
+// Metodos de STRING: Repeat
+
+const palavra = 'Testando';
+console.log(palavra.repeat(7)); //Vai repetir 7 vezes
+
