@@ -167,5 +167,16 @@ const somaInfinita2 = (...args) => {
 console.log(somaInfinita2(10,22,323));
 
 
+// Destructuring em objetos 
 
+const userDetails = {
+    nome: 'Humberto Fuas',
+    job: 'Dev Full-Stack',
+};
+
+const {nome, job} = userDetails; //Estrutuda do Destructuring 
+console.log(nome, job);
+
+const {nome: nomeCompleto} = userDetails; // Cria a variavel nomeCompleto e add o valor que se encontra no NOME dentro do OBJECT
+console.log(nomeCompleto, job);
 
