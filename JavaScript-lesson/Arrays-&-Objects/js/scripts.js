@@ -187,4 +187,21 @@ const myList = ['Carro', 'Moto', 'Bike'];
 const [veiculoA, veiculoB, veiculoC] = myList; //Estrutuda do Destructuring, as variaveis sao as minhas escolhas
 console.log(veiculoA, veiculoB, veiculoC);
 
+// JSON
 
+ 
+const myJson = 
+    ' {"nome": "Humberto", "idade": 26, "Job": "Dev", "Skills": ["Python","Javascript","React.js"]} ';
+
+console.log(myJson);
+
+// JSON para Objecto & Vise-Versa
+
+const myObj = JSON.parse(myJson); // JSON para Objecto
+console.log(myObj);
+
+myObj.OpenToWork = true; // add elemento .NomeDoElemento = valor
+console.log(myObj);
+
+const myNewJson = JSON.stringify(myObj); // Objecto para JSON
+console.log(myNewJson);
