@@ -151,3 +151,21 @@ const somaInfinita = (...args) => {
 };
 
 console.log(somaInfinita(1,2,3));
+
+// Estrutura de repeticao For...OF 
+
+const somaInfinita2 = (...args) => {
+    let total = 0;
+
+    for( num of args ) { 
+        total += num;
+    };
+
+    return total;
+};
+
+console.log(somaInfinita2(10,22,323));
+
+
+
+
