@@ -47,3 +47,25 @@ console.log(Object.getPrototypeOf(boolean)); // Vamos saber os ancestrais de um 
 const arr = [];
 console.log(Object.getPrototypeOf(arr)); // Vamos saber os ancestrais de um array.
  
+
+// Classes Basicas
+console.log('\n\n');
+
+const cachorro = { // Essa e a classe cachorro
+    raca: null,
+    patas: 4,
+};
+
+const pastroAlemao = Object.create(cachorro); // FORMA DE ESTANSIAR A CLASSE (Criar um objeto, que herda o Obj cachorro)
+pastroAlemao.raca = 'Pastor Alemao'; // A raca desse Obj mudara sera  'Pastor Alemao'.
+
+console.log(pastroAlemao); 
+console.log(pastroAlemao.patas); 
+
+const bulldog = Object.create(cachorro);
+bulldog.raca = 'bulldog';
+console.log(bulldog); 
+
+
+
+
