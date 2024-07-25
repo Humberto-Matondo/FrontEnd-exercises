@@ -89,6 +89,9 @@ console.log(bob);
 // Funcoes Construtoras(Classes baseadas em funcoes) 
 console.log('\n\n');
 
+
+// ESSA FORMA ABAIXO, E A MAIS SIMPLIFICADA DE CRIAR UM OBJ:
+
 function Cachorro(nome, raca){ // Essa e a MELHOR E NOVA FORMA de se declarar a classe.
     this.nome = nome
     this.raca = raca
@@ -97,3 +100,11 @@ function Cachorro(nome, raca){ // Essa e a MELHOR E NOVA FORMA de se declarar a 
 const pitbull = new Cachorro('Max','pittbull'); // Melhor forma e nova de se instanciar um OBJ.
 console.log(pitbull);
 
+// Metodos em Funcoes Contrutoras
+console.log('\n\n');
+
+Cachorro.prototype.uivar = function() { //Adicionou-se uma funcao nova(funcao Uivar) na classe Cachorro
+    console.log('Uivando . . .');
+};
+
+pitbull.uivar();
