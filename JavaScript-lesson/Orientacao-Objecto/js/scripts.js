@@ -66,6 +66,22 @@ const bulldog = Object.create(cachorro);
 bulldog.raca = 'bulldog';
 console.log(bulldog); 
 
+// Classes Baseadas em Funcoes Construtoras. 
+console.log('\n\n');
+
+function criarCachorro(nome, raca){
+
+    const cachorro = Object.create({});
+    cachorro.nome = nome;
+    cachorro.raca = raca;
+    return cachorro;
+}
+
+const snow = criarCachorro('Snow', 'Caffeiro-Mistura');
+console.log(snow);
 
 
+const bob = criarCachorro('Bod', 'Pastor alemao');
+console.log(bob);
 
+// E bem mais rapito, limpo e pratico criar assim as funcoes. 
