@@ -85,3 +85,15 @@ const bob = criarCachorro('Bod', 'Pastor alemao');
 console.log(bob);
 
 // E bem mais rapito, limpo e pratico criar assim as funcoes. 
+
+// Funcoes Construtoras(Classes baseadas em funcoes) 
+console.log('\n\n');
+
+function Cachorro(nome, raca){ // Essa e a MELHOR E NOVA FORMA de se declarar a classe.
+    this.nome = nome
+    this.raca = raca
+};
+
+const pitbull = new Cachorro('Max','pittbull'); // Melhor forma e nova de se instanciar um OBJ.
+console.log(pitbull);
+
