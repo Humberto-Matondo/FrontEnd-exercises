@@ -148,3 +148,24 @@ const c1 = new Caminhao(3,'Azul');
 
 console.log(c1);
 console.log(c1.motor);
+
+// Override nas Propriedades via Prototype: 
+console.log('\n\n');
+
+class Humano{
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+    }   
+}
+
+const humberto = new Humano('Humberto', 26);
+console.log(humberto);
+
+console.log(Humano.prototype.idade);
+
+Humano.prototype.idade = 'N defenida';
+
+console.log(humberto.idade);
+console.log(Humano.prototype.idade);
+
