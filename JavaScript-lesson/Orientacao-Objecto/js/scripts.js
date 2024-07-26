@@ -108,3 +108,18 @@ Cachorro.prototype.uivar = function() { //Adicionou-se uma funcao nova(funcao Ui
 };
 
 pitbull.uivar();
+
+// Classes ES6
+console.log('\n\n');
+
+class CachorroClasse { // E dessa forma que usa-se a classe aqui no JS.
+    constructor(name, raca) {
+        this.name = name
+        this.raca = raca
+    }
+}
+
+const jeff = new CachorroClasse('jeff','RAFEIRO');
+
+console.log(jeff);
+console.log(Object.getPrototypeOf(jeff));
