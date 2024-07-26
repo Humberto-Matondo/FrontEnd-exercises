@@ -123,3 +123,28 @@ const jeff = new CachorroClasse('jeff','RAFEIRO');
 
 console.log(jeff);
 console.log(Object.getPrototypeOf(jeff));
+
+// Mais sobre Classes: 
+console.log('\n\n');
+
+class Caminhao{
+    constructor(eixos, cor){
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descrevercaminhao(){
+        console.log(`Este caminhao tem ${this.eixos} eixos  e tem a cor ${this.cor}`);
+    }
+}
+
+const scania = new Caminhao(7,'Preto e Branco');
+console.log(scania);
+scania.descrevercaminhao();
+
+Caminhao.prototype.motor = 4.0; // Unica forma para add novo metodo dentro da classe.
+const c1 = new Caminhao(3,'Azul');
+
+
+console.log(c1);
+console.log(c1.motor);
