@@ -191,4 +191,31 @@ console.log(boeing);
 console.log(boeing[asas]);
 console.log(boeing[pilotos]);
 
+// Getters e Setters: 
+console.log('\n\n'); 
+
+class PostBlog{
+    constructor(titulo, descricao, tags){
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.tags = tags;
+    }
+
+    get exibirTitulo(){
+        return `voce esta lendo: ${this.titulo}`;
+    }
+
+    set addTags(tags){
+        const tagsArray = tags.split(', ');
+        this.tags = tagsArray;
+    }
+}
+
+const myPost = new PostBlog('Algum post', 'Post sobre Developeres');
+
+console.log(myPost);
+
+myPost.addTags = 'Programar, JavaScript, Js'; // Add no Set
+
+console.log(myPost);
 
