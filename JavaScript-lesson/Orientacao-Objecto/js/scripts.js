@@ -219,3 +219,24 @@ myPost.addTags = 'Programar, JavaScript, Js'; // Add no Set
 
 console.log(myPost);
 
+// Herança: 
+console.log('\n\n'); 
+
+class Manifero{
+    constructor(patas){
+        this.patas = patas;
+    }
+} 
+
+class Lobo extends Manifero{ // O filho extende da classe Pai
+    constructor(patas, nome){ 
+        super(patas, patas ); // para alterar a propriedade patas da class pai
+        this.nome = nome;
+    }
+}
+
+const shark = new Lobo(4, 'Shark');
+
+console.log(shark); 
+
+console.log(shark.patas); 
