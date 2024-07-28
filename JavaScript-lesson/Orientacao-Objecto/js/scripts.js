@@ -169,3 +169,26 @@ Humano.prototype.idade = 'N defenida';
 console.log(humberto.idade);
 console.log(Humano.prototype.idade);
 
+// Symbol em Classes: 
+console.log('\n\n');
+
+class aviao{
+    constructor(marca, turbina){
+        this.marca = marca;
+        this.turbina = turbina;
+    }
+}
+
+const asas = Symbol();
+const pilotos = Symbol();
+
+aviao.prototype[asas] = 2;
+aviao.prototype[pilotos] = 3;
+
+const boeing = new aviao('Boeing', 10);
+
+console.log(boeing);
+console.log(boeing[asas]);
+console.log(boeing[pilotos]);
+
+
