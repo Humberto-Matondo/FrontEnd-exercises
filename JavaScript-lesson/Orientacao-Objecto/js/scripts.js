@@ -240,3 +240,13 @@ const shark = new Lobo(4, 'Shark');
 console.log(shark); 
 
 console.log(shark.patas); 
+
+// InstanceOf: 
+console.log('\n\n'); 
+
+console.log(shark instanceof Lobo); // Para verificar se o shark e instancia da classe Lobo 
+
+console.log(Lobo instanceof Manifero);
+
+console.log(new Lobo(4, 'Snow') instanceof Manifero); // Se o obj Lobo e instancia do obj Manifero
+
