@@ -45,3 +45,25 @@ Promise.resolve(4*'abc')
     }
 })
 .catch((err) => console.log(`Ocorreu Um Erro: ${err}`));
+
+// Rejeição na Promise
+console.log('\n\n')
+
+function checkNumber(n){
+    return new Promise((resolve, reject) =>{
+
+        if(n > 10){
+            resolve('Numero e maior que 10');
+        }else{
+            reject(new Error('Numero e muito baixo'));
+        }
+    }); 
+}
+
+const a = checkNumber(20);
+const b = checkNumber(10);
+
+console.log(a, b);
+
+a.then((v) => console.log(`O resultado ${v}`)).catch((err) => console.log(`Um erro ocorreu ${err}`));
+b.then((v) => console.log`O resultado ${v}`).catch((err) => console.log(`Um erro ocorreu ${err}`));
