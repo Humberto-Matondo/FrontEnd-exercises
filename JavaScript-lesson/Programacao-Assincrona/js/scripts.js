@@ -34,3 +34,14 @@ promises.then(value => {
 .then((value) => console.log(`Agora essa e a soma: ${value}`));
 
 console.log('Outro codigo');
+
+// Falha na Promise
+console.log('\n\n')
+
+Promise.resolve(4*'abc')
+.then((n) => {
+    if(Number.isNaN(n)){ // Se o valor do (n) n for um numero
+        throw new Error('VALOR INVALIDO')
+    }
+})
+.catch((err) => console.log(`Ocorreu Um Erro: ${err}`));
