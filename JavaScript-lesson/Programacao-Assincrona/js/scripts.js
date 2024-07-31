@@ -9,7 +9,7 @@ setTimeout(function(){ //Funcao anonima
 console.log('AINDA N EXECUTOU 2');
 
 // Funcoes setInterval
-console.log('\n\n')
+console.log('\n\n');
 
 console.log('AINDA N EXECUTOU setInterval');
 
@@ -20,7 +20,7 @@ console.log('AINDA N EXECUTOU setInterval');
 console.log('AINDA N EXECUTOU setInterval');
 
 // Promises
-console.log('\n\n')
+console.log('\n\n');
 
 const promises = Promise.resolve(20+6); //Prometeu resolver esse problema 
 
@@ -36,7 +36,7 @@ promises.then(value => {
 console.log('Outro codigo');
 
 // Falha na Promise
-console.log('\n\n')
+console.log('\n\n');
 
 Promise.resolve(4*'abc')
 .then((n) => {
@@ -47,7 +47,7 @@ Promise.resolve(4*'abc')
 .catch((err) => console.log(`Ocorreu Um Erro: ${err}`));
 
 // Rejeição na Promise
-console.log('\n\n')
+console.log('\n\n');
 
 function checkNumber(n){
     return new Promise((resolve, reject) =>{
@@ -69,7 +69,7 @@ a.then((v) => console.log(`O resultado ${v}`)).catch((err) => console.log(`Um er
 b.then((v) => console.log`O resultado ${v}`).catch((err) => console.log(`Um erro ocorreu ${err}`));
 
 // Resolvemos varias Promises
-console.log('\n\n')
+console.log('\n\n');
 
 const p1 = new Promise((resolve, reject) =>{
     setTimeout(function(){
@@ -90,7 +90,7 @@ const p3 = new Promise((resolve, reject) =>{
 Promise.all([p1, p2, p3]).then((values) => console.log(values));  
 
 // Async functions
-console.log('\n\n')
+console.log('\n\n');
 
 async function somarComDalay(a,b){
     return a + b
@@ -101,3 +101,22 @@ somarComDalay(2, 4).then((value) => {
 });
 
 console.log('TESTAR ASYNC');
+
+//  Instrucao await ou async await
+console.log('\n\n');
+
+function resolveComDelay(){
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Resolveu a Promise');
+        }, 2000);
+    });
+}
+
+async function chamadaAsyncAwait(){
+    console.log('CHAMANDO A PROMISE, E ESPERANDO O RESULTADO');
+    const result = await resolveComDelay();
+    console.log(`O resultado chegou: ${result}`);
+}
+
+chamadaAsyncAwait();
